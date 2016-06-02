@@ -5,9 +5,10 @@ from time import sleep
 def test_baidu():
   ''' baidu search key : pyse '''
   driver = Pyse("chrome")
-  driver.open("https://www.baidu.com")
-  driver.type("id=>kw","pyse")
-  driver.click("css=>#su")
+  # driver.open("https://www.baidu.com")
+  driver.open("http://10.1.0.52/middlecas/login?service=http://10.1.0.52:8080/middleresource/shiro-cas")
+  # driver.type("id=>kw","pyse")
+  # driver.click("css=>#su")
   sleep(1)
   assert "pyse" in driver.get_title()
   driver.quit()
