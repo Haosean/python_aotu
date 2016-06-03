@@ -1,1 +1,1 @@
- print '1231200pydeom' 
+print '1231200pydeom '

@@ -22,4 +22,10 @@ time.sleep(1)
 browser.find_element_by_name('submit').click()
 
 time.sleep(5)
-browser.quit()
+browser.get('http://10.1.0.52/middleclient/pcManager/schoolPage.do')
+# claz = browser.find_element_by_class_name('btn.btn-list')
+button = browser.find_element_by_tag_name("button")
+for btn in button:
+    if btn.get_attribute('schoolname') == '大学A':
+        option.click()
+time.sleep(5)
